@@ -38,7 +38,7 @@ public class HomeTest extends BaseTest {
     }
 
     @ParameterizedTest
-    @ValueSource(strings={"","","",""})
+    @ValueSource(strings={"שיקום מקצועי","מענק פטירה","שאירים","דמי קבורה"})
     public void ClickOnMainMenuItems(String link){
         homePage.ClickOnMainMenuItem(MainMenu.HyperLink3);
         driver.findElement(By.linkText(link)).click();
